@@ -123,6 +123,18 @@ sub BUILDARGS {
 
 1;
 
+__END__
+
+=pod
+
+=head1 NAME
+
+TypeLibrary::FromXSD::Element - Create a single type decleration from a simpleType xsd element
+
+=head1 VERSION
+
+version 0.02
+
 =head1 SYNOPSIS
 
   use TypeLibrary::FromXSD::Element;
@@ -160,5 +172,17 @@ prints the type declaration
 
 Please note that this distribution does not support all combinations of basetypes (xs:string, xs:decimal, ...) and other restrictions
 (xs:minLength, xs:maxLength, ...) yet.
+
+=head1 AUTHOR
+
+Renee Baecker <github@renee-baecker.de>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2013 by Renee Baecker.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0 (GPL Compatible)
 
 =cut

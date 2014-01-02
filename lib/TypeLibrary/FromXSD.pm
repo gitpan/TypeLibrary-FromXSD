@@ -12,7 +12,7 @@ use XML::LibXML;
 
 use TypeLibrary::FromXSD::Element;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 has types       => (is => 'rwp');
 has xsd         => (is => 'ro', required => 1);
@@ -147,10 +147,17 @@ sub _validate_datetime_sub {
 
 1;
 
-=head 1 DESCRIPTION
+__END__
 
-This module helps to create a library for types (using C<Type::Tiny>) based on a XML schema.
-It searches for I<simpleType>s in the I<.xsd> file and creates a type for it.
+=pod
+
+=head1 NAME
+
+TypeLibrary::FromXSD - create a Type::Tiny library of simpleTypes in .xsd files.
+
+=head1 VERSION
+
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -162,6 +169,11 @@ It searches for I<simpleType>s in the I<.xsd> file and creates a type for it.
   );
   
   $generator->run;
+
+=head1 DESCRIPTION
+
+This module helps to create a library for types (using C<Type::Tiny>) based on a XML schema.
+It searches for I<simpleType>s in the I<.xsd> file and creates a type for it.
 
 =head1 METHODS
 
@@ -239,5 +251,17 @@ create those types:
           (length( (split /\./, $_)[1] ) == 5) &&
           (tr/0123456789// == 18)
       };
+
+=head1 AUTHOR
+
+Renee Baecker <github@renee-baecker.de>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2013 by Renee Baecker.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0 (GPL Compatible)
 
 =cut
