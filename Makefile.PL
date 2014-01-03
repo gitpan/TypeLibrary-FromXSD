@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-
+use 5.008009;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -24,15 +24,17 @@ my %WriteMakefileArgs = (
   "NAME" => "TypeLibrary::FromXSD",
   "PREREQ_PM" => {
     "Capture::Tiny" => 0,
+    "DateTime" => 0,
     "File::Basename" => 0,
     "File::Spec" => 0,
     "Getopt::Long" => 0,
     "Moo" => 0,
     "Test::More" => 0,
+    "Type::Tiny" => 0,
     "XML::LibXML" => 0
   },
   "TEST_REQUIRES" => {},
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }

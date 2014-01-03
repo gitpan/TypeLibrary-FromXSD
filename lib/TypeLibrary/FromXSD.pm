@@ -12,7 +12,7 @@ use XML::LibXML;
 
 use TypeLibrary::FromXSD::Element;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 has types       => (is => 'rwp');
 has xsd         => (is => 'ro', required => 1);
@@ -157,7 +157,7 @@ TypeLibrary::FromXSD - create a Type::Tiny library of simpleTypes in .xsd files.
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

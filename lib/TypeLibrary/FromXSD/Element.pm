@@ -4,7 +4,7 @@ package TypeLibrary::FromXSD::Element;
 
 use Moo;
 
-our $VERSION = 0.01;
+our $VERSION = 0.03;
 
 has name         => (is => 'ro', required => 1);
 has base         => (is => 'ro', required => 1);
@@ -133,7 +133,7 @@ TypeLibrary::FromXSD::Element - Create a single type decleration from a simpleTy
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

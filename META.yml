@@ -14,10 +14,17 @@ meta-spec:
 name: TypeLibrary-FromXSD
 requires:
   Capture::Tiny: 0
+  DateTime: 0
   File::Basename: 0
   File::Spec: 0
   Getopt::Long: 0
   Moo: 0
   Test::More: 0
+  Type::Tiny: 0
   XML::LibXML: 0
-version: 0.02
+  perl: 5.008009
+resources:
+  bugtracker: http://github.com/reneeb/TypeLibrary-FromXSD/issues
+  homepage: http://github.com/reneeb/TypeLibrary-FromXSD
+  repository: http://github.com/reneeb/TypeLibrary-FromXSD.git
+version: 0.03
